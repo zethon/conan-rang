@@ -14,11 +14,11 @@ See [Conan-Package-Tools](https://github.com/conan-io/conan-package-tools) Githu
 
 ## Self-Packaging
 
-If you want to create and upload the rang package to your own Conan repo then the steps are:
+If you want to create and upload the rang package then follow these steps:
 
-* `https://github.com/zethon/conan-rang.git`
-* `cd conan-rang`
-* `conan create . myrepo/stable` (replace `myrepo` with you own repo information)
-* `conan upload rang/3.1@myrepo/stable -r myrepo`
+* `git clone https://github.com/zethon/conan-rang.git` - clone the recipe repo
+* `cd conan-rang` 
+* `conan create . myrepo/stable` - replace `myrepo` with you own repo information
+* `conan upload rang/3.1@myrepo/stable -r myrepo` - upload the package to your own repo
 
-Since this is a header-only library there is no build step required.
+Note: Since this is a header-only library there is no build step required.
